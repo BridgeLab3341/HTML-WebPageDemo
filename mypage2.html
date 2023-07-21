@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 2em;
+    }
+    .header-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: tomato;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: lightgreen;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+.mainContentItem{
+text-align: left;
+background: deepskyblue;
+}
+.sideBarleftItem{
+    background: gold;
+}
+.sideBarRightItem{
+    background: hotpink;
+}
+.sidebarItem{
+    flex: 1 0 0;
+    border: 0px solid green;
+}
+.mainContentItem{
+    flex:3 0px;
+}
+.sideBarleftItem{
+order: 1;
+}
+.mainContentItem{
+order: 2;
+}
+.sideBarRightItem{
+    order: 3;
+}
+</style>
+<body>
+    <header class="header-container"><h1>HEADER-Sample FlexBox Example</h1></header>
+    <div class="mainContainer">
+        <section class="mainContentItem">
+            <article>
+                <h2>First article</h2>
+                <p>Working together to keep the Tech Employablity of Engineers alive and accessible, so Tech Companies WorldWide can get
+                    Contributors and accessible, so Tech Companies WorldWide can get contibutors and Creaters for Technologies Solutions.
+                    We belive this act of human collabration across an employability platform is essential to individual growth and our collective future.
+                </p>
+            </article>
+            <article>
+                <h2>Second article</h2>
+                <p>Working together to keep the Tech Employablity of Engineers alive and accessible, so Tech Companies WorldWide can get
+                    Contributors and accessible, so Tech Companies WorldWide can get contibutors and Creaters for Technologies Solutions.
+                    We belive this act of human collabration across an employability platform is essential to individual growth and our collective future.
+                </p>
+            </article>
+            <article>
+                <h2>Second article</h2>
+                <p>Working together to keep the Tech Employablity of Engineers alive and accessible, so Tech Companies WorldWide can get
+                    Contributors and accessible, so Tech Companies WorldWide can get contibutors and Creaters for Technologies Solutions.
+                    We belive this act of human collabration across an employability platform is essential to individual growth and our collective future.
+                </p>
+            </article>
+        </section>
+        <sidebar class="sidebarItem sideBarleftItem"> <div class="center"><p>Left side bar</p></div></sidebar>
+        <sidebar class="sidebarItem sideBarRightItem"><div class="center"><p>Right side bar</p></div></sidebar>
+    </div>
+    <footer class="footerContainer"><h2>Footer</h2></Footer></footer>
+</body>
+</html>
